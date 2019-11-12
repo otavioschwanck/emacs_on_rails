@@ -1,0 +1,27 @@
+2018-05-29  Noam Postavsky  <npostavs@gmail.com>
+
+	Don't forget the snippets in yasnippet-classic-snippets
+
+	* packages/yasnippet-classic-snippets/yasnippet-classic-snippets.el: Add
+	'Package-Type: multi'.	Although there is only a single elisp in the top
+	directory, we want to include the snippet files (which are the main
+	point of this package) in the tarball.
+
+2018-05-14  Noam Postavsky  <npostavs@users.sourceforge.net>
+
+	Fix loading of yasnippet-classic-snippets
+
+	* packages/yasnippet-classic-snippets/yasnippet-classic-snippets.el: 
+	Don't require yasnippet.  Handle old single string format of 
+	yas-snippet-dirs.  Make sure yasnippet-classic-snippets-dir is actually
+	defined when we use it.	 Bump version to 1.0.1.
+
+2018-05-13  Noam Postavsky  <npostavs@users.sourceforge.net>
+
+	* packages/yasnippet: Merge version 0.13.0 from upstream.
+
+	* packages/yasnippet/snippets: Move to...
+	* packages/yasnippet-classic-snippets/snippets: ... here.
+	* packages/yasnippet-classic-snippets/yasnippet-classic-snippets.el: New
+	package.
+

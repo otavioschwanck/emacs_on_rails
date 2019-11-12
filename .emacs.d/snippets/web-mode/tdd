@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: tdd
+# key: tdd
+# --
+<td><%= ${instance}.nome %></td>

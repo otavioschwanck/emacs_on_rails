@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: enum
+# key: enum
+# --
+as_enum :${field}, [:${item}], prefix: true, map: :string

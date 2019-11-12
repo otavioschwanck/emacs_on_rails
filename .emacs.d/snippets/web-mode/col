@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: col
+# key: col
+# --
+<div class = "col col-lg-${4}">
+  $0
+</div>

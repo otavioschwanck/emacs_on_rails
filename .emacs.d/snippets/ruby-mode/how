@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: how
+# key: how
+# --
+if how == '$1' do
+  $0
+end

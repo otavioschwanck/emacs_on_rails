@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: if
+# key: if
+# --
+<% if ${condiction} %>
+  $0
+<% end %>

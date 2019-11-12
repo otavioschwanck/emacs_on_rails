@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: cin
+# key: cin
+# --
+<%= cell(:input, ${form}, key: :${field_name}, col: 'md-${4}', input_opts: ${{}}) %>

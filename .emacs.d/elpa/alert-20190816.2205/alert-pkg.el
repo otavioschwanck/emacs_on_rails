@@ -1,0 +1,2 @@
+;;; -*- no-byte-compile: t -*-
+(define-package "alert" "20190816.2205" "Growl-style notification system for Emacs" '((gntp "0.1") (log4e "0.3.0") (cl-lib "0.5")) :commit "b5ef49bbb871867ac03d2943a720576336cd7025" :keywords '("notification" "emacs" "message") :authors '(("John Wiegley" . "jwiegley@gmail.com")) :maintainer '("John Wiegley" . "jwiegley@gmail.com") :url "https://github.com/jwiegley/alert")
