@@ -1,4 +1,4 @@
-# emacs_on_rails
+# Emacs on Rails
 
 Configurações do Emacs para desenvolver em Rails.
 
