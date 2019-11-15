@@ -2,7 +2,19 @@
 
 Configurações do Emacs para desenvolver em Rails.
 
-Cheatsheet e Guia de instalação se encontra no PDF.
+Cheatsheet e Guia de instalação se encontra no PDFRails (Busca padrão, por model, 
+
+## Principais Features
+
+- Editor com integração completa com Ruby
+- Checagem de erros de sintaxe
+- Integração com Rubocop
+- Autocomplete avançado
+- Snippets
+- Terminal, Rails Server e Console direto no editor
+- Navegação avançada pensando no Rails (Busca padrão, por model, controller, feature, etc)
+- Execução de testes direto no editor, podendo ir para linha que deu erro rapidamente.
+- Super rápido
 
 ## Vídeo com dicas e demonstração:
 
