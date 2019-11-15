@@ -573,4 +573,3 @@
 
 (setq initial-buffer-choice (lambda () (get-buffer "*dashboard*")))
 (require 'all-the-icons)
-(all-the-icons-insert-icons-for 'alltheicon)
