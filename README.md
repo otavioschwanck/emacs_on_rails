@@ -4,6 +4,21 @@ Configurações do Emacs para desenvolver em Rails.
 
 Cheatsheet e Guia de instalação se encontra no PDFRails (Busca padrão, por model, 
 
+# Instalação
+
+## Linux Mint 19 / Ubuntu 18.04
+
+```
+sudo add-apt-repository ppa:kelleyk/emacs
+sudo apt update
+sudo apt install emacs26 silversearcher-ag elpa-counsel
+git clone https://github.com/otavioschwanck/emacs_on_rails.git
+cd emacs_on_rails
+cp .emacs ~/ && cp -r .emacs.d ~/
+```
+
+Abra o emacs, e execute: `M-x all-the-icons-install-fonts`
+
 ## Principais Features
 
 - Editor com integração completa com Ruby
