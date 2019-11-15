@@ -12,7 +12,7 @@ Cheatsheet e Guia de instalação se encontra no PDF.
 
 ![screenshot](https://github.com/otavioschwanck/emacs_on_rails/blob/master/dashboard.png?raw=true)
 
-## Macro Demonstration
+## Demonstração de macro com emacs:
 
 ![demonstration](https://github.com/otavioschwanck/emacs_on_rails/blob/master/macro%20example.gif?raw=true)
 
