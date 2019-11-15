@@ -98,7 +98,7 @@
  '(objed-cursor-color "#e74c3c")
  '(package-selected-packages
    (quote
-    (dashboard feature-mode busybee-theme highlight-indent-guides zenburn-theme moe-theme afternoon-theme grandshell-theme clues-theme molokai-theme spaceline git-gutter nimbus-theme ample-theme railscasts-reloaded-theme spacemacs-theme kaolin-themes gruvbox-theme monokai-theme monokai-pro-theme dracula-theme hungry-delete rubocop csv-mode restclient smartparens markdown-mode edit-server avy ace-window darktooth-theme zencoding-mode swiper ivy doom-themes solarized-theme color-theme-sanityinc-tomorrow rbenv helm-ag linum-relative yasnippet-classic-snippets magit multiple-cursors textmate-to-yas web-mode exec-path-from-shell yaml-mode company company-mode robe flycheck expand-region pacmacs yasnippet-snippets yasnippet rspec-mode helm-projectile helm projectile projectile-rails)))
+    (beacon dashboard feature-mode busybee-theme highlight-indent-guides zenburn-theme moe-theme afternoon-theme grandshell-theme clues-theme molokai-theme spaceline git-gutter nimbus-theme ample-theme railscasts-reloaded-theme spacemacs-theme kaolin-themes gruvbox-theme monokai-theme monokai-pro-theme dracula-theme hungry-delete rubocop csv-mode restclient smartparens markdown-mode edit-server avy ace-window darktooth-theme zencoding-mode swiper ivy doom-themes solarized-theme color-theme-sanityinc-tomorrow rbenv helm-ag linum-relative yasnippet-classic-snippets magit multiple-cursors textmate-to-yas web-mode exec-path-from-shell yaml-mode company company-mode robe flycheck expand-region pacmacs yasnippet-snippets yasnippet rspec-mode helm-projectile helm projectile projectile-rails)))
  '(pdf-view-midnight-colors (quote ("#b2b2b2" . "#292b2e")))
  '(pos-tip-background-color "#073642")
  '(pos-tip-foreground-color "#93a1a1")
@@ -573,3 +573,11 @@
 
 (setq initial-buffer-choice (lambda () (get-buffer "*dashboard*")))
 (require 'all-the-icons)
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
+
+(beacon-mode 1)
