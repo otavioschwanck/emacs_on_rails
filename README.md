@@ -20,9 +20,10 @@ Cheatsheet e Guia de instalação se encontra no PDFRails (Busca padrão, por mo
 
 - https://www.youtube.com/watch?v=ARwgXfwtyQk
 
-## Screenshot
+## Screenshots
 
 ![screenshot](https://github.com/otavioschwanck/emacs_on_rails/blob/master/dashboard.png?raw=true)
+![screenshot2](https://github.com/otavioschwanck/emacs_on_rails/blob/master/auto_complete.png?raw=true)
 
 ## Demonstração de macro com emacs:
 
