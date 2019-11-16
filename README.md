@@ -14,7 +14,7 @@ sudo apt update
 sudo apt install emacs26 silversearcher-ag elpa-counsel
 git clone https://github.com/otavioschwanck/emacs_on_rails.git
 cd emacs_on_rails
-cp .emacs ~/ && cp -r .emacs.d ~/
+cp .emacs ~/ && cp -r .emacs.d ~/ -f
 ```
 
 Abra o emacs, e execute: `M-x all-the-icons-install-fonts`
