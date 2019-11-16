@@ -588,5 +588,5 @@
 (drag-stuff-global-mode)
 (global-set-key (kbd "M-P") 'drag-stuff-up)
 (global-set-key (kbd "M-N") 'drag-stuff-down)
-(global-set-key (kbd "M-S-up") 'drag-stuff-up)
-(global-set-key (kbd "M-S-down") 'drag-stuff-down)
+(global-set-key [M-S-up] 'drag-stuff-up)
+(global-set-key [M-S-down] 'drag-stuff-down)
