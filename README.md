@@ -12,6 +12,29 @@ Cheatsheet e Guia de instalação se encontra no PDFRails (Busca padrão, por mo
 sudo add-apt-repository ppa:kelleyk/emacs
 sudo apt update
 sudo apt install emacs26 silversearcher-ag elpa-counsel
+cd
+git clone https://github.com/otavioschwanck/emacs_on_rails.git
+cd emacs_on_rails
+cp .emacs ~/ && cp -r .emacs.d ~/ -f
+```
+
+## Fedora
+
+```
+sudo dnf install -y emacs elpa
+cd
+git clone https://github.com/otavioschwanck/emacs_on_rails.git
+cd emacs_on_rails
+cp .emacs ~/ && cp -r .emacs.d ~/ -f
+```
+
+## Debian 10
+
+```
+sudo apt install flatpak
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+flatpak install flathub org.gnu.emacs
+cd
 git clone https://github.com/otavioschwanck/emacs_on_rails.git
 cd emacs_on_rails
 cp .emacs ~/ && cp -r .emacs.d ~/ -f
