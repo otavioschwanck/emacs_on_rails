@@ -582,7 +582,13 @@
 
 (beacon-mode 1)
 
+(counsel-mode 1)
+(ivy-mode 1)
+(setq ivy-use-virtual-buffers t)
+(setq enable-recursive-minibuffers t)
+
 (global-set-key (kbd "C-x C-f") 'counsel-find-file)
+(define-key ivy-minibuffer-map (kbd "TAB") 'ivy-alt-done)
 
 ;;; Drag Stuff
 (drag-stuff-global-mode)
@@ -591,4 +597,4 @@
 (global-set-key [M-S-up] 'drag-stuff-up)
 (global-set-key [M-S-down] 'drag-stuff-down)
 
-(add-hook 'dired-mode-hook 'all-the-icons-dired-mode)
+(all-the-icons-ivy-setup)
