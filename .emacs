@@ -598,3 +598,4 @@
 (global-set-key [M-S-down] 'drag-stuff-down)
 
 (all-the-icons-ivy-setup)
+(add-hook 'dired-mode-hook 'all-the-icons-dired-mode)
