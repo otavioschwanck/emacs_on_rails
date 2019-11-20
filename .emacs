@@ -329,8 +329,6 @@
   (msc/revert-buffer-noconfirm)
   )
 
-(fset 'create_test_file
-   [?\C-x ?\C-f ?\M-n ?\C-a ?\C-s ?a ?p ?p return backspace backspace backspace ?s ?p ?e ?c ?\C-e ?\C-b ?\C-b ?\C-b ?_ ?s ?p ?e ?c return])
 
 (defun endless/ruby-define-method ()
   (interactive)
@@ -384,7 +382,6 @@
 (global-set-key (kbd "C-q") 'yas-expand)
 (global-set-key (kbd "C-x r p") (kbd "M-m C-SPC C-e M-w SPC = SPC C-y M-m @ C-n"))
 (global-set-key (kbd "C-S-s") 'sp-splice-sexp)
-(global-set-key (kbd "C-c T") 'create_test_file)
 (global-set-key (kbd "C-c r 3 T") (kbd "C-c , 4 t"))
 
 (define-key ruby-mode-map (kbd "C-c t") #'endless/toggle-ruby-block)
