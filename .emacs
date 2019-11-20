@@ -588,6 +588,7 @@
 (setq enable-recursive-minibuffers t)
 (setq all-the-icons-ivy-buffer-commands '())
 (global-set-key (kbd "C-x b") 'counsel-switch-buffer)
+(global-set-key (kbd "C-x C-b") 'counsel-switch-buffer)
 
 (global-set-key (kbd "C-x C-f") 'counsel-find-file)
 (define-key ivy-minibuffer-map (kbd "TAB") 'ivy-alt-done)
