@@ -583,7 +583,6 @@
 (ivy-mode 1)
 (setq ivy-use-virtual-buffers t)
 (setq enable-recursive-minibuffers t)
-(setq all-the-icons-ivy-buffer-commands '())
 (global-set-key (kbd "C-x b") 'counsel-switch-buffer)
 (global-set-key (kbd "C-x C-b") 'counsel-switch-buffer)
 
@@ -599,3 +598,4 @@
 
 (all-the-icons-ivy-setup)
 (add-hook 'dired-mode-hook 'all-the-icons-dired-mode)
+(setq all-the-icons-ivy-buffer-commands '())
