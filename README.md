@@ -12,7 +12,6 @@ Cheatsheet e Guia de instalação se encontra no PDFRails (Busca padrão, por mo
 sudo add-apt-repository ppa:kelleyk/emacs
 sudo apt update
 sudo apt install emacs26 silversearcher-ag
-sudo apt install elpa-counsel (este precisa ser separado)
 cd
 git clone https://github.com/otavioschwanck/emacs_on_rails.git
 cd emacs_on_rails
@@ -22,7 +21,7 @@ cp .emacs ~/ && cp -r .emacs.d ~/ -f
 ## Fedora
 
 ```
-sudo dnf install -y emacs elpa
+sudo dnf install -y emacs
 cd
 git clone https://github.com/otavioschwanck/emacs_on_rails.git
 cd emacs_on_rails
