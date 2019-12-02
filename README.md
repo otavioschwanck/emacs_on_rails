@@ -42,6 +42,12 @@ cp .emacs ~/ && cp -r .emacs.d ~/ -f
 
 Abra o emacs, e execute: `M-x all-the-icons-install-fonts`
 
+## Javascript
+
+Para ter os auto-completes com o javascript, basta instalar o tern.
+
+$ `npm install -g tern`
+
 ## Principais Features
 
 - Editor com integração completa com Ruby
