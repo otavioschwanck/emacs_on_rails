@@ -1,5 +1,8 @@
 ;;; package --- Summary:
 
+;;; uncomment this to disable startup and menu-bar
+(menu-bar-mode -1)
+
 (require 'package)
 (let* ((no-ssl (and (memq system-type '(windows-nt ms-dos))
                     (not (gnutls-available-p))))
@@ -282,9 +285,6 @@
 
 (tool-bar-mode -1)
 (setq inhibit-startup-screen t)
-
-;;; uncomment this to disable startup and menu-bar
-(menu-bar-mode -1)
 
 ;;; Personal functions
 
@@ -632,3 +632,5 @@
 (all-the-icons-ivy-setup)
 (add-hook 'dired-mode-hook 'all-the-icons-dired-mode)
 (setq all-the-icons-ivy-buffer-commands '())
+
+(setq projectile-completion-system 'helm)
