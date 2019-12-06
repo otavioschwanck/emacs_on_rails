@@ -634,3 +634,4 @@
 (setq all-the-icons-ivy-buffer-commands '())
 
 (setq projectile-completion-system 'helm)
+(defalias 'yes-or-no-p 'y-or-n-p)
