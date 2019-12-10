@@ -102,7 +102,7 @@
  '(objed-cursor-color "#e74c3c")
  '(package-selected-packages
    (quote
-    (xref-js2 js2-refactor js2-mode company-tern all-the-icons-dired drag-stuff counsel beacon dashboard feature-mode busybee-theme highlight-indent-guides zenburn-theme moe-theme afternoon-theme grandshell-theme clues-theme molokai-theme spaceline git-gutter nimbus-theme ample-theme railscasts-reloaded-theme spacemacs-theme kaolin-themes gruvbox-theme monokai-theme monokai-pro-theme dracula-theme hungry-delete rubocop csv-mode restclient smartparens markdown-mode edit-server avy ace-window darktooth-theme zencoding-mode swiper ivy doom-themes solarized-theme color-theme-sanityinc-tomorrow rbenv helm-ag linum-relative yasnippet-classic-snippets magit multiple-cursors textmate-to-yas web-mode exec-path-from-shell yaml-mode company company-mode robe flycheck expand-region pacmacs yasnippet-snippets yasnippet rspec-mode helm-projectile helm projectile projectile-rails)))
+    (enh-ruby-mode xref-js2 js2-refactor js2-mode company-tern all-the-icons-dired drag-stuff counsel beacon dashboard feature-mode busybee-theme highlight-indent-guides zenburn-theme moe-theme afternoon-theme grandshell-theme clues-theme molokai-theme spaceline git-gutter nimbus-theme ample-theme railscasts-reloaded-theme spacemacs-theme kaolin-themes gruvbox-theme monokai-theme monokai-pro-theme dracula-theme hungry-delete rubocop csv-mode restclient smartparens markdown-mode edit-server avy ace-window darktooth-theme zencoding-mode swiper ivy doom-themes solarized-theme color-theme-sanityinc-tomorrow rbenv helm-ag linum-relative yasnippet-classic-snippets magit multiple-cursors textmate-to-yas web-mode exec-path-from-shell yaml-mode company company-mode robe flycheck expand-region pacmacs yasnippet-snippets yasnippet rspec-mode helm-projectile helm projectile projectile-rails)))
  '(pdf-view-midnight-colors (quote ("#b2b2b2" . "#292b2e")))
  '(pos-tip-background-color "#073642")
  '(pos-tip-foreground-color "#93a1a1")
@@ -151,6 +151,8 @@
 ;; Emacs file for Ruby on Rails Development
 
 ;;; Code:
+
+(require 'enh-ruby-mode)
 
 ;;; Helm
 
@@ -257,6 +259,8 @@
 (add-hook 'prog-mode-hook #'yas-minor-mode)
 
 ;;; Ruby
+(add-to-list 'auto-mode-alist
+             '("\\(?:\\.rb\\|ru\\|rake\\|thor\\|jbuilder\\|gemspec\\|podspec\\|/\\(?:Gem\\|Rake\\|Cap\\|Thor\\|Vagrant\\|Guard\\|Pod\\)file\\)\\'" . enh-ruby-mode))
 
 (setq ruby-insert-encoding-magic-comment nil)
 (setq enh-ruby-add-encoding-comment-on-save nil)
@@ -396,9 +400,9 @@
 (global-set-key (kbd "C-S-s") 'sp-splice-sexp)
 (global-set-key (kbd "C-c r 3 T") (kbd "C-c , 4 t"))
 
-(define-key ruby-mode-map (kbd "C-c t") #'endless/toggle-ruby-block)
-(define-key ruby-mode-map (kbd "C-c w") #'endless/ruby-copy-class-name)
-(define-key ruby-mode-map (kbd "C-c f") #'endless/ruby-define-method)
+(define-key enh-ruby-mode-map (kbd "C-c t") #'endless/toggle-ruby-block)
+(define-key enh-ruby-mode-map (kbd "C-c w") #'endless/ruby-copy-class-name)
+(define-key enh-ruby-mode-map (kbd "C-c f") #'endless/ruby-define-method)
 
 
 ;;; Rubocop
@@ -437,6 +441,7 @@
 ;;; Byebug inside rspec
 ;;; use C-x C-q to enable
 (add-hook 'after-init-hook 'inf-ruby-switch-setup)
+(add-hook 'after-init-hook 'rspec-mode)
 
 ;;; Multiple Cursors
 (require 'multiple-cursors)
@@ -491,8 +496,8 @@
 (add-hook 'sgml-mode-hook 'zencoding-mode)
 
 ;;; .arb is ruby!
-(add-to-list 'auto-mode-alist '("\\.arb\\'"          . ruby-mode))
-(add-to-list 'auto-mode-alist '("\\.axlsx\\'"          . ruby-mode))
+(add-to-list 'auto-mode-alist '("\\.arb\\'"          . enh-ruby-mode))
+(add-to-list 'auto-mode-alist '("\\.axlsx\\'"          . enh-ruby-mode))
 
 ;; Javascript
 (require 'js2-mode)
@@ -553,7 +558,7 @@
 ;;; Smartparens
 (require 'smartparens-config)
 (require 'smartparens-ruby)
-(add-hook 'ruby-mode-hook #'smartparens-mode)
+(add-hook 'enh-ruby-mode-hook #'smartparens-mode)
 
 (smartparens-global-mode)
 
