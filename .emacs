@@ -274,7 +274,9 @@
 (global-set-key (kbd "C-c w a")  'rubocop-autocorrect-project)
 
 ;; for keyboard with use / in Alt-gt + w
+
 (global-set-key (kbd "C-;") 'undo)
+(global-set-key (kbd "C-u") 'undo)
 
 ;;; Expand Region
 
@@ -334,7 +336,8 @@
 ;;; Avy rulez
 
 (define-key global-map (kbd "C-:") 'avy-goto-char)
-(global-set-key (kbd "C-c C-w") 'avy-goto-word-1)
+(global-set-key (kbd "C-c C-w") 'avy-goto-char-timer)
+(global-set-key (kbd "C-c w") 'avy-goto-char-timer)
 (global-set-key (kbd "M-g f") 'avy-goto-line)
 (global-set-key (kbd "M-g e") 'avy-goto-word-0)
 
@@ -465,8 +468,10 @@
 
 (setq dashboard-set-heading-icons t)
 (setq dashboard-set-file-icons t)
+(setq dashboard-center-content t)
 
-(setq dashboard-items '((recents  . 5)
+(setq dashboard-items '((recents  . 10)
+                        (bookmarks . 10)
                         (projects . 5)))
 
 (setq initial-buffer-choice (lambda () (get-buffer "*dashboard*")))
@@ -506,4 +511,7 @@
  '(custom-enabled-themes (quote (doom-molokai)))
  '(custom-safe-themes
    (quote
-    ("f951343d4bbe5a90dba0f058de8317ca58a6822faa65d8463b0e751a07ec887c" default))))
+    ("f951343d4bbe5a90dba0f058de8317ca58a6822faa65d8463b0e751a07ec887c" default)))
+ '(tool-bar-mode nil))
+
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
