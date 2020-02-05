@@ -391,6 +391,11 @@
 
 ;;; Ace Window
 (global-set-key (kbd "M-o") 'ace-window)
+(global-set-key (kbd "C-x w u") 'winner-undo)
+(global-set-key (kbd "C-x w r") 'winner-redo)
+(global-set-key (kbd "C-x w s") 'ace-swap-window)
+
+(winner-mode t)
 
 ;;; Edit Server
 
@@ -514,4 +519,6 @@
     ("f951343d4bbe5a90dba0f058de8317ca58a6822faa65d8463b0e751a07ec887c" default)))
  '(tool-bar-mode nil))
 
+;; Other configs
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
+(save-place-mode 1)
