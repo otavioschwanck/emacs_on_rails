@@ -29,6 +29,14 @@
 (global-set-key "\C-\M-j" #'flycheck-next-error)
 (global-set-key "\C-\M-i" #'flycheck-previous-error)
 
+(with-eval-after-load 'flycheck
+  '(add-hook 'flycheck-mode-hook 'flycheck-popup-tip-mode))
+
+(eval-after-load 'flycheck
+  (if (display-graphic-p)
+      (flycheck-pos-tip-mode)
+    (flycheck-popup-tip-mode)))
+
 ;; Comment here if  you use reek
 (setq-default flycheck-disabled-checkers '(ruby-reek))
 
@@ -517,8 +525,18 @@
  '(custom-safe-themes
    (quote
     ("f951343d4bbe5a90dba0f058de8317ca58a6822faa65d8463b0e751a07ec887c" default)))
+ '(package-selected-packages
+   (quote
+    (flycheck-pos-tip flycheck-popup-tip zencoding-mode zenburn-theme yasnippet-snippets yasnippet-classic-snippets yaml-mode xref-js2 websocket web-mode textmate-to-yas spacemacs-theme spaceline solarized-theme smartparens rubocop rspec-mode robe restclient request rbenv railscasts-reloaded-theme projectile-rails pacmacs oauth2 nimbus-theme multi monokai-theme monokai-pro-theme molokai-theme moe-theme markdown-mode magit linum-relative kaolin-themes js2-refactor hungry-delete highlight-indent-guides helm-projectile helm-ag gruvbox-theme grandshell-theme git-gutter flycheck feature-mode expand-region exec-path-from-shell emojify edit-server drag-stuff dracula-theme doom-themes dashboard darktooth-theme counsel company-tern color-theme-sanityinc-tomorrow clues-theme circe busybee-theme beacon ample-theme all-the-icons-ivy all-the-icons-dired alert afternoon-theme ace-window)))
  '(tool-bar-mode nil))
 
 ;; Other configs
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 (save-place-mode 1)
+(global-linum-mode)
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
