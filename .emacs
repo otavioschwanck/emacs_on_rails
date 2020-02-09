@@ -76,6 +76,8 @@
 ;;; Run projectile fetch + robe-start
 (setq inf-ruby-console-environment "development")
 
+(add-hook 'compilation-filter-hook 'inf-ruby-auto-enter)
+
 (def-projectile-commander-method ?S
   "Git fetch and console."
   (magit-status)
