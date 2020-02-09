@@ -1,86 +1,42 @@
 # Emacs on Rails
 
-Configurações do Emacs para desenvolver em Rails.
+A Ruby on Rails configuration file to use on Ruby on Rails Development.
 
-Cheatsheet e Guia de instalação se encontra no PDFRails (Busca padrão, por model, 
+# Installation
 
-# Instalação
+## Requirements
 
-## Linux Mint 19 / Ubuntu 18.04
+- ripgrep silversearcher-ag
+- Emacs 26 (OBS: On ubuntu 18.04 and lower, you need to use a PPA)
+- Rbenv (optional)
 
-```
-sudo add-apt-repository ppa:kelleyk/emacs
-sudo apt update
-sudo apt install emacs26 silversearcher-ag
-cd
-git clone https://github.com/otavioschwanck/emacs_on_rails.git
-cd emacs_on_rails
-cp .emacs ~/ && cp -r .emacs.d ~/ -f
-```
-
-## Fedora
+## Quick Start
 
 ```
-sudo dnf install -y emacs
-cd
-git clone https://github.com/otavioschwanck/emacs_on_rails.git
-cd emacs_on_rails
-cp .emacs ~/ && cp -r .emacs.d ~/ -f
-```
+git clone https://github.com/otavioschwanck/emacs_on_rails.git ~/.emacs.d
+cp ~/.emacs.d/user.el ~/.emacs.d/user_config/user.el
 
-## Debian 10
+Open the emacs and run: `M-x all-the-icons-install-fonts`
 
 ```
-sudo apt install flatpak
-flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-flatpak install flathub org.gnu.emacs
-cd
-git clone https://github.com/otavioschwanck/emacs_on_rails.git
-cd emacs_on_rails
-cp .emacs ~/ && cp -r .emacs.d ~/ -f
-```
 
-## Arch Linux
+## Features
 
-```
-sudo pacman -S the_silver_searcher emacs
-cd
-git clone https://github.com/otavioschwanck/emacs_on_rails.git
-cd emacs_on_rails
-cp .emacs ~/ && cp -r .emacs.d ~/ -f
-```
-
-
-Abra o emacs, e execute: `M-x all-the-icons-install-fonts`
-
-## Javascript
-
-Para ter os auto-completes com o javascript, basta instalar o tern.
-
-$ `npm install -g tern`
-
-## Principais Features
-
-- Editor com integração completa com Ruby
-- Checagem de erros de sintaxe
-- Integração com Rubocop
-- Autocomplete avançado
+- Full integrated with Ruby
+- Syntax checking with rubocop and reek
+- Autocomplete using ruby-server (robe)
 - Snippets
-- Terminal, Rails Server e Console direto no editor
-- Navegação avançada pensando no Rails (Busca padrão, por model, controller, feature, etc)
-- Execução de testes direto no editor, podendo ir para linha que deu erro rapidamente.
-- Super rápido
+- Terminal, rails console and server inside the editor
+- Navigation made for Ruby on Rails
+- Rspec integrated
+- Fast
+- Customizable (editing /user_config/user.el)
 
-## Vídeo com dicas e demonstração:
-
-- https://www.youtube.com/watch?v=ARwgXfwtyQk
-
-## Screenshots
+## Screenshots:
 
 ![screenshot](https://github.com/otavioschwanck/emacs_on_rails/blob/master/dashboard.png?raw=true)
 ![screenshot2](https://github.com/otavioschwanck/emacs_on_rails/blob/master/auto_complete.png?raw=true)
 
-## Demonstração de macro com emacs:
+## Macro with emacs:
 
 ![demonstration](https://github.com/otavioschwanck/emacs_on_rails/blob/master/macro%20example.gif?raw=true)
-
