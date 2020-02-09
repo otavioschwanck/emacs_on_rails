@@ -2,7 +2,8 @@ backups
 auto-save-list
 elpa
 snippets
-transiet
+transient
 places
 projectile-bookmarks.eld
 history.el
+recentf
