@@ -1,5 +1,0 @@
-# -*- mode: snippet -*-
-# name: theq
-# key: theq
-# --
-<th><%= ${instance}.${field} %></th>

@@ -1,5 +1,0 @@
-# -*- mode: snippet -*-
-# name: conl
-# key: conl
-# --
-console.log(${item})
