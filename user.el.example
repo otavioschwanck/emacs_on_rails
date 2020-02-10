@@ -36,3 +36,20 @@
 
 ;; Default projectile rails command.  If you use docker, can change here.
 (defvar projectile-rails-vanilla-command "bin/rails")
+
+;; If you want that projectile opens git fetch instead find file, uncomment the lines below
+;; (defun projectile-git-fetch ()
+;;   (magit-status)
+;;   (if (fboundp 'magit-fetch-from-upstream)
+;;       (cpall-interactively #'magit-fetch-from-upstream)
+;;     (call-interactively #'magit-fetch-current))
+;;   )
+
+;; (setq projectile-switch-project-action
+;;       #'projectile-git-fetch)
+
+;; (setcar
+;;  counsel-projectile-switch-project-action
+;;  (1+ (cl-position #'counsel-projectile-switch-project-action-vc
+;;                   (cdr counsel-projectile-switch-project-action)
+;;                   :key #'cadr)))

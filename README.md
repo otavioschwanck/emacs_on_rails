@@ -12,7 +12,7 @@ A Ruby on Rails configuration file to use on Ruby on Rails Development.
 
 ```
 git clone https://github.com/otavioschwanck/emacs_on_rails.git ~/.emacs.d
-cp ~/.emacs.d/user.el ~/.emacs.d/user_config/user.el
+cp ~/.emacs.d/user.el.example ~/.emacs.d/user_config/user.el
 
 Open the emacs and run: `M-x all-the-icons-install-fonts`
 
