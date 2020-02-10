@@ -36,3 +36,6 @@
   (dashboard-setup-startup-hook)
   (setq initial-buffer-choice (lambda () (get-buffer "*dashboard*")))
   )
+
+(use-package doom-modeline
+  :hook (after-init . doom-modeline-mode))
