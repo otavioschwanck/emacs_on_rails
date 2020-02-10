@@ -20,6 +20,7 @@
 (winner-mode t)
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 (save-place-mode 1)
+(delete-selection-mode 1)
 
 ;; UTF-8
 (setq locale-coding-system 'utf-8)
@@ -65,18 +66,14 @@
 
 ;; User Files
 (load "~/.emacs.d/user_config/user.el")
-
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-safe-themes
-   (quote
-    ("e1ecb0536abec692b5a5e845067d75273fe36f24d01210bf0aa5842f2a7e029f" default)))
  '(package-selected-packages
    (quote
-    (counsel-projectile ace-window flycheck ivy-hydra expand-region :expand-region use-package doom-themes counsel all-the-icons))))
+    (which-key rbenv yasnippet-snippets yasnippet multiple-cursors smartparens company ace-window flycheck-popup-tip flycheck-pos-tip flycheck expand-region zencoding-mode web-mode hungry-delete exec-path-from-shell rspec-mode robe projectile-rails counsel-projectile projectile git-gutter magit wgrep-ag wgrep ivy-hydra counsel dashboard neotree kaolin-themes doom-themes all-the-icons-dired all-the-icons-ivy all-the-icons drag-stuff use-package))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

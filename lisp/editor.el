@@ -83,5 +83,3 @@
   )
 
 (use-package yasnippet-snippets)
-
-(delete-selection-mode 1)
