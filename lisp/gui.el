@@ -11,6 +11,7 @@
 
 ;; Theme
 (use-package doom-themes)
+(use-package kaolin-themes)
 
 (use-package neotree
   :init
