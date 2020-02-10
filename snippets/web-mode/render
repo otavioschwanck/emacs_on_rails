@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: render
+# key: render
+# --
+<%= render '${partial_path}' %>

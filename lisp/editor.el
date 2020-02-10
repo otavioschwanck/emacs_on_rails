@@ -74,7 +74,6 @@
 (use-package yasnippet
   :init
   (yas-global-mode 1)
-  (yas-reload-all)
   :config
   (add-hook 'prog-mode-hook #'yas-minor-mode)
   (eval-after-load 'rspec-mode
@@ -82,4 +81,7 @@
   (global-set-key (kbd "C-q") 'yas-expand)
   )
 
-(use-package yasnippet-snippets)
+(use-package yasnippet-snippets
+  :after
+  (yas-reload-all)
+  )

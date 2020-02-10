@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: tdeq
+# key: tdeq
+# --
+<td><%= ${instance}.${field} %></td>
