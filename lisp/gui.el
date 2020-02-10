@@ -39,3 +39,10 @@
 
 (use-package doom-modeline
   :hook (after-init . doom-modeline-mode))
+
+(use-package highlight-indent-guides
+  :init
+  (setq highlight-indent-guides-method 'character)
+  :config
+  (add-hook 'prog-mode-hook 'highlight-indent-guides-mode)
+  )
