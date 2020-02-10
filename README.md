@@ -30,6 +30,50 @@ Open the emacs and run: `M-x all-the-icons-install-fonts`
 - Fast
 - Customizable (editing /user_config/user.el)
 
+## Keybindings
+
+For Projectile-rails, use this keybindings: https://github.com/asok/projectile-rails#the-keymap-is-unbound-by-default-the-following-keybinding-assume-that-youve-bound-it-to-c-c-r-see-keymap-prefix-section-for-details
+
+(Prefix: `C-c r`)
+
+For Rspec-mode, use this keybindigs: https://github.com/pezra/rspec-mode#rspec-verifiable-mode
+
+(Prefix: `C-c ,`)
+
+Other keybindigs:
+
+| Key | Description |
+| --- | ----------  |
+| `C-c r` | Projectile Rails prefix |
+| `C-c g` | MaGIT.  To learn more about magit: https://www.youtube.com/watch?v=vQO7F2Q9DwA. |
+| `M-2` | Expand-region.  Useful do select things |
+| `M-o` | Switch windows |
+| `C-x w u` | Undo window changes |
+| `C-x w r` | Redo window changes |
+| `C-x C-r` | Search for recent files |
+| `C-x w m` | Set a bookmark |
+| `C-x w b` | Search for bookmarks |
+| `C-c w` | Copy current buffer class name |
+| C-c { | Toggle ruby block |
+| `C-c r '` | Run `robe-start` to get better auto-completes |
+| `C-q` | Toggle snippets.  Example:  type def and press `C-q` |
+
+## Daily use techniques
+
+- Search and replace in entire project
+
+Just run `C-c /`, search for the text and press `C-c C-o`.  To make the buffer editable, press `C-x C-q`.  Do your changes and press `C-c C-c` to confirm.
+
+## Some plugins documentations
+
+- https://github.com/joaotavora/yasnippet
+- https://github.com/asok/projectile-rails
+- https://github.com/bbatsov/projectile
+- https://github.com/dgutov/robe
+
+## New to emacs
+
+If you never used Emacs, i strongly recommend you do the basic tutorial.  After open Emacs, just run C-h t (Ctrl + H, t) and follow do the exercises.
 
 ## Screenshots
 
