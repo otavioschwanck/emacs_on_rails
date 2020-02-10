@@ -17,6 +17,8 @@
   ;; (rvm-use-default)
 ;; )
 
+;; Indent JS with 2 spaces
+(setq js-indent-level 2)
 
 ;; Change here the desired theme
 (load-theme 'doom-one t)

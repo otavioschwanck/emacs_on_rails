@@ -61,6 +61,7 @@
 (load "~/.emacs.d/lisp/git.el")
 (load "~/.emacs.d/lisp/project_management.el")
 (load "~/.emacs.d/lisp/ruby.el")
+(load "~/.emacs.d/lisp/javascript.el")
 (load "~/.emacs.d/lisp/web.el")
 (load "~/.emacs.d/lisp/editor.el")
 
