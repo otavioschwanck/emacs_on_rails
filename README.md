@@ -57,6 +57,8 @@ Other keybindigs:
 | `C-c {` | Toggle ruby block |
 | `C-c r '` | Run `robe-start` to get better auto-completes |
 | `C-q` | Toggle snippets.  Example:  type def and press `C-q` |
+| `C-c c` | Just start some text on the screen.  Then, just jump to it. |
+| `C-c C-v` | Works on web mode.  Can make tags easily.  See: https://www.emacswiki.org/emacs/ZenCoding |
 
 ## Daily use techniques
 
