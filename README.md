@@ -54,7 +54,7 @@ Other keybindigs:
 | `C-x w m` | Set a bookmark |
 | `C-x w b` | Search for bookmarks |
 | `C-c w` | Copy current buffer class name |
-| C-c { | Toggle ruby block |
+| `C-c {` | Toggle ruby block |
 | `C-c r '` | Run `robe-start` to get better auto-completes |
 | `C-q` | Toggle snippets.  Example:  type def and press `C-q` |
 
