@@ -81,7 +81,8 @@
   (global-set-key (kbd "C-q") 'yas-expand)
   )
 
-(use-package yasnippet-snippets
+(use-package yasnippet-snippets)
+(use-package yasnippet-classic-snippets
   :after
   (yas-reload-all)
   )
