@@ -21,6 +21,7 @@
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 (save-place-mode 1)
 (delete-selection-mode 1)
+(setq recentf-max-saved-items 120)
 
 ;; UTF-8
 (setq locale-coding-system 'utf-8)
