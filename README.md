@@ -1,6 +1,6 @@
 # Emacs on Rails
 
-A Ruby on Rails configuration file to use on Ruby on Rails Development.
+A Emacs configuration file to use on Ruby on Rails Development.
 
 ## Requirements
 
