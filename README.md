@@ -1,11 +1,11 @@
 # Emacs on Rails
 
-A Ruby on Rails configuration file to use on Ruby on Rails Development.
+A Emacs configuration file to use on Ruby on Rails Development.
 
 ## Requirements
 
 - ripgrep silversearcher-ag
-- Emacs 26 (OBS: On ubuntu 18.04 and lower, you need to use a PPA)
+- Emacs 26 (OBS: On ubuntu 18.04 or lower, you need to use a PPA)
 - Rbenv (optional)
 
 ## Quick Start
