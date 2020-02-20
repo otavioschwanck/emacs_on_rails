@@ -28,3 +28,6 @@ recentf
 user_config/user.el
 bookmarks
 session*
+/tramp
+/.mc-lists.el
+/%backup%~
