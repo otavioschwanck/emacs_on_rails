@@ -7,7 +7,8 @@
 (add-hook 'after-init-hook 'inf-ruby-switch-setup)
 
 (use-package rspec-mode
-  :config
+  :init
+  (setq rspec-use-spring-when-possible nil)
   )
 
 (setq ruby-insert-encoding-magic-comment nil)
