@@ -97,15 +97,8 @@ respectively."
    ([remap sp-backward-kill-word] . backward-kill-word)
 
    ("M-[" . sp-backward-unwrap-sexp)
-   ("M-]" . sp-unwrap-sexp)
+   ("M-]" . sp-unwrap-sexp))
 
-   ("C-c ("  . wrap-with-parens)
-   ("C-c ["  . wrap-with-brackets)
-   ("C-c {"  . wrap-with-braces)
-   ("C-c '"  . wrap-with-single-quotes)
-   ("C-c \"" . wrap-with-double-quotes)
-   ("C-c _"  . wrap-with-underscores)
-   ("C-c `"  . wrap-with-back-quotes))
 
   (require 'smartparens-ruby)
   (require 'smartparens-config)
