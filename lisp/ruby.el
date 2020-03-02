@@ -134,3 +134,9 @@
 (add-to-list 'auto-mode-alist '("\\.axlsx\\'"          . ruby-mode))
 
 (use-package yaml-mode)
+
+(use-package bundler
+  :config
+  (define-key ruby-mode-map (kbd "C-c b i") 'bundle-install)
+  (define-key ruby-mode-map (kbd "C-c b u") 'bundle-update)
+  )
