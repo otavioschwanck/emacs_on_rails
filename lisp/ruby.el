@@ -137,6 +137,8 @@
 
 (use-package bundler
   :config
-  (define-key ruby-mode-map (kbd "C-c b i") 'bundle-install)
-  (define-key ruby-mode-map (kbd "C-c b u") 'bundle-update)
+  (global-set-key (kbd "C-c b i") 'bundle-install)
+  (global-set-key (kbd "C-c b u") 'bundle-update)
+  (which-key-add-key-based-replacements
+    "C-c b" "Bundler")
   )
