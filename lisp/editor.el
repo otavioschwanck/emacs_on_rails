@@ -6,15 +6,15 @@
 (global-set-key (kbd "C-c C-j") 'join-line)
 
 ;; New undo alternatives
-
 (global-set-key (kbd "C-;") 'undo)
 (global-set-key (kbd "C-u") 'undo)
 
+;; Bookmark
+(global-set-key (kbd "C-<return>") 'counsel-bookmark)
+
 ;; Expand Region
 (use-package expand-region
-  :init
-  (global-set-key (kbd "M-2") 'er/expand-region)
-  )
+  :bind ("M-2" . 'er/expand-region))
 
 (use-package flycheck
   :init (global-flycheck-mode))

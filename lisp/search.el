@@ -32,4 +32,4 @@
 (setq ivy-use-virtual-buffers t)
 (setq enable-recursive-minibuffers t)
 
-(global-set-key (kbd "C-c c") 'avy-goto-char-timer)
+(global-set-key (kbd "C-c c") 'avy-goto-char-2)

@@ -117,11 +117,11 @@
   :init
   (add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
 
-  (setq web-mode-extra-auto-pairs
-	'(("erb"  . (("beg" "end")))
-	  ("php"  . (("beg" "end")
-		     ("beg" "end")))
-	  ))
+  ;; (setq web-mode-extra-auto-pairs
+  ;; 	'(("erb"  . (("beg" "end")))
+  ;; 	  ("php"  . (("beg" "end")
+  ;; 		     ("beg" "end")))
+  ;; 	  ))
 
   (defun my-web-mode-hook ()
     "Hooks for Web mode."

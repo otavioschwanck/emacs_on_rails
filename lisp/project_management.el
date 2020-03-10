@@ -1,10 +1,10 @@
 (use-package projectile
   :init
-  (projectile-mode +1)
-  (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
-  :config
   (setq projectile-completion-system 'ivy)
-  )
+  (projectile-mode +1)
+  :bind (("C-c p" . projectile-command-map)
+	 ("C-," . counsel-projectile-switch-to-buffer)
+	 ("C-." . projectile-find-file)))
 
 (use-package counsel-projectile
   :init

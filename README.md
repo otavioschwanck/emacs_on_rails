@@ -45,6 +45,10 @@ Other keybindigs:
 | Key | Description |
 | --- | ----------  |
 | `C-c r` | Projectile Rails prefix |
+| `C-c p` | Projectile prefix |
+| `C-.` | Find file on project |
+| `C-,` | Find opened buffers on project |
+| `C-RET` | Search for bookmark.  You can manage a created bookmark with M-o |
 | `C-c g` | MaGIT.  To learn more about magit: https://www.youtube.com/watch?v=vQO7F2Q9DwA. |
 | `M-2` | Expand-region.  Useful do select things |
 | `M-o` | Switch windows |
