@@ -16,7 +16,7 @@
 (setq enh-ruby-add-encoding-comment-on-save nil)
 
 (use-package exec-path-from-shell
-  :defer 5
+  :defer 1
   :config
   (when (memq window-system '(mac ns x))
     (exec-path-from-shell-initialize))
