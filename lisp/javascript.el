@@ -1,4 +1,5 @@
 (use-package js2-mode
+  :defer 3
   :config
   (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
   (add-to-list 'auto-mode-alist '("\\.jsx\\'" . js2-mode))
@@ -6,9 +7,10 @@
   )
 
 (use-package js2-refactor
+  :defer 3
   :config
   (add-hook 'js2-mode-hook #'js2-refactor-mode)
-  (js2r-add-keybindings-with-prefix "C-c C-r")
+  (js2r-add-keybindings-with-prefix "C-c j")
   (define-key js2-mode-map (kbd "C-k") #'js2r-kill)
   )
 

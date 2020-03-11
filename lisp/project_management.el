@@ -1,4 +1,5 @@
 (use-package projectile
+  :defer 1
   :init
   (setq projectile-completion-system 'ivy)
   (projectile-mode +1)
@@ -15,6 +16,7 @@
   )
 
 (use-package projectile-rails
+  :defer 5
   :init
   (projectile-rails-global-mode)
   (define-key projectile-rails-mode-map (kbd "C-c r") 'projectile-rails-command-map)

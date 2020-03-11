@@ -116,6 +116,7 @@ respectively."
 
 
 (use-package yasnippet
+  :defer 5
   :init
   (yas-global-mode 1)
   :config
@@ -125,8 +126,15 @@ respectively."
   (global-set-key (kbd "C-q") 'yas-expand)
   )
 
-(use-package yasnippet-snippets)
+(use-package recentf
+  :defer 1)
+
+
+(use-package yasnippet-snippets
+  :after (yasnippet)
+  )
 (use-package yasnippet-classic-snippets
-  :after
+  :config
   (yas-reload-all)
+  :after (yasnippet)
   )

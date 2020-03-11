@@ -1,4 +1,5 @@
 (use-package robe
+  :defer 4
   :init
   (global-robe-mode)
   (global-set-key (kbd "C-c r '") #'robe-start)
@@ -15,6 +16,7 @@
 (setq enh-ruby-add-encoding-comment-on-save nil)
 
 (use-package exec-path-from-shell
+  :defer 5
   :config
   (when (memq window-system '(mac ns x))
     (exec-path-from-shell-initialize))

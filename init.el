@@ -1,5 +1,6 @@
 ;; Must have configs
 
+(setq gc-cons-threshold (* 50 1000 1000))
 (setq delete-old-versions -1 ) ; delete excess backups silently
 (setq version-control t )
 (setq vc-make-backup-files t )
@@ -82,3 +83,5 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+(setq gc-cons-threshold (* 2 1000 1000))

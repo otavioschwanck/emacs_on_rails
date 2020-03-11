@@ -34,3 +34,15 @@
   (global-set-key [M-S-up] 'drag-stuff-up)
   (global-set-key [M-S-down] 'drag-stuff-down)
   )
+
+(use-package saveplace
+  :defer 6)
+
+(use-package server
+  :defer 6)
+
+(use-package autorevert
+  :defer 6)
+
+(use-package whitespace
+  :defer 6)
