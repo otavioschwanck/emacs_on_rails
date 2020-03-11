@@ -21,7 +21,7 @@
 (setq js-indent-level 2)
 
 ;; Change here the desired theme
-(load-theme 'doom-one t)
+(load-theme 'doom-molokai t)
 
 ;; This show the command pallet, it help for new comers.
 (use-package which-key
@@ -31,7 +31,8 @@
   (which-key-setup-side-window-bottom)
   (setq which-key-sort-order 'which-key-key-order-alpha
     which-key-side-window-max-width 0.33
-    which-key-idle-delay 0.05)
+    which-key-idle-delay 0.7
+    which-key-idle-secondary-delay 0.35)
   (push '((nil . "projectile-rails-\\(.+\\)") . (nil . "\\1"))
         which-key-replacement-alist)
   :diminish which-key-mode)
